@@ -9,6 +9,9 @@ import { WatchlistComponent } from './watchlist/watchlist.component';
 import { MoviesComponent } from './movies/movies.component';
 import { ShowsComponent } from './shows/shows.component';
 import { FooterComponent } from './footer/footer.component';
+import { SearchPipe } from './search.pipe';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -18,12 +21,14 @@ import { FooterComponent } from './footer/footer.component';
     WatchlistComponent,
     MoviesComponent,
     ShowsComponent,
-    FooterComponent
+    FooterComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
