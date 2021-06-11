@@ -30,14 +30,14 @@ export class MoviesComponent implements OnInit {
 
   checkMovie(p:any):boolean
   {
-   
-    if(this.W1.WatchList.indexOf(p)==-1)
-    return true;
-    else
-    {
-    console.log(this.W1.WatchList.length);
-    return false;
-    }
+  let idx= this.W1.WatchList.findIndex(function(e)
+   {
+     return e.id==p.id;
+   })
+   if(idx==-1)
+   return true;
+   else
+   return false;
   }
   sendInfo(p:any)
   {

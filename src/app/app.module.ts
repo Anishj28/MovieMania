@@ -11,6 +11,7 @@ import { ShowsComponent } from './shows/shows.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchPipe } from './search.pipe';
 import { FormsModule } from '@angular/forms';
+import { MoviefilterPipe } from './moviefilter.pipe';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     MoviesComponent,
     ShowsComponent,
     FooterComponent,
-    SearchPipe
+    SearchPipe,
+    MoviefilterPipe
   ],
   imports: [
     BrowserModule,
